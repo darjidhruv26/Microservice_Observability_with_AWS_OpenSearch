@@ -36,8 +36,6 @@
 
 ![18](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/a0ee643a-0c3b-422d-898c-cb09eadd9c46)
 
-![19](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/83d7df2f-32d6-4460-8992-fdfde4deb57e)
-
 ![20](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/633deca4-ba6f-427c-a295-4f4cfc0a6e71)
 
 ![21](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/e703818e-d3af-4ccc-b652-8a0f2e89025c)
@@ -50,5 +48,9 @@
 
 ![25](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/3b89bd43-8771-44dd-aba5-115d11acaaf3)
 
-![26](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/f9541683-89b2-4c21-947f-0e1f1bc73067)
 
+![27](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/e5f66c6b-5286-4ae4-8284-acddb38c631c)
+
+![28](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/fa3169ef-9507-4846-8475-5b0a4e2aaa05)
+
+![29](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/2d294a1a-1ef3-43a4-b828-69ace65a1fc2)
