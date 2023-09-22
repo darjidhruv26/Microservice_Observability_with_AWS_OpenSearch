@@ -1,5 +1,8 @@
 # Microservice_Observability_with_AWS_OpenSearch
 
+![Slide1](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/2f342bd0-d437-46a3-b62a-e356e33d8542)
+
+
 ![26](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/8161fea0-f0c5-4e2f-b051-e8cc1481e2fe)
 
 ![2](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/88279731-c894-4c84-9d1d-cce6bc12a800)
