@@ -1,8 +1,10 @@
 # Microservice_Observability_with_AWS_OpenSearch
 
-### Microservice Observability with AWS OpenSearch Servise 
+> Microservice Observability with AWS OpenSearch Servise 
 
 ![Slide1](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/2f342bd0-d437-46a3-b62a-e356e33d8542)
+
+## [Source Code GitHub repo](https://github.com/aws-samples/observability-with-amazon-opensearch/)
 
 
 ![26](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/8161fea0-f0c5-4e2f-b051-e8cc1481e2fe)
@@ -59,3 +61,13 @@
 ![28](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/fa3169ef-9507-4846-8475-5b0a4e2aaa05)
 
 ![29](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/2d294a1a-1ef3-43a4-b828-69ace65a1fc2)
+
+# Resources
+- [OpenSerarch Docs](https://opensearch.org/docs/latest/)
+
+- [OpenSerarch Data Prepper Docs](https://opensearch.org/docs/latest/data-prepper/index/)
+
+- [Amazon OpenSearch Service documentation](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html)
+
+- [Amazon OpenSearch Service Trace Analytics feature](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/trace-analytics.html)
+
