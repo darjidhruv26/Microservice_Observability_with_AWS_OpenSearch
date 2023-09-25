@@ -2,6 +2,29 @@
 
 > Microservice Observability with AWS OpenSearch Servise 
 
+- Amazon OpenSearch Service
+
+- OpenSearch
+
+- OpenTelemetry
+
+- Docker
+
+- Amazon EKS
+
+- Amazon ECR
+
+- AWS Distro for OpenTelemetry
+
+- Trace Analytics
+
+- Data Prepper
+
+- Sample App o11y Shop
+
+- FluentBit
+
+
 ![Slide1](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/2f342bd0-d437-46a3-b62a-e356e33d8542)
 
 ## [Source Code GitHub repo](https://github.com/aws-samples/observability-with-amazon-opensearch/)
