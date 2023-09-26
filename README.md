@@ -3,12 +3,16 @@
 > Microservice Observability with AWS OpenSearch Servise 
 
 - Amazon OpenSearch Service
+> Amazon OpenSearch is a managed AWS service that makes it easy to deploy, operate, and scale OpenSearch clusters in the AWS Cloud. Amazon OpenSearch Service supports OpenSearch and legacy Elasticsearch OSS.
 
 - OpenSearch
+> OpenSearch is a distributed, open-source and analytics suite used for a broad set of use cases like real-time application monitoring, log analytics, and website search that includes OpenSearch Dashboards.
 
 - OpenTelemetry
+> OpenTelemetry is a collection of tools, APIs, and SDKs to instrument, generate, collect, and export telemetry data(metrics, logs, and traces) to help you analyze your application's behavior.
 
 - Docker
+>Docker is
 
 - Amazon EKS
 
