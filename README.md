@@ -21,12 +21,12 @@
 > Amazon Elastic Container Registry is a managed container image registry service that is secure, scalable and reliable.
 
 - AWS Distro for OpenTelemetry
+> AWS Distro for OpenTelemetry is a secure, production-ready, AWS-supported distribution of the OpenTelemetry project.
 
 - Trace Analytics
+> 
 
 - Data Prepper
-
-- Sample App o11y Shop
 
 - FluentBit
 
