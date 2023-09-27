@@ -12,11 +12,13 @@
 > OpenTelemetry is a collection of tools, APIs, and SDKs to instrument, generate, collect, and export telemetry data(metrics, logs, and traces) to help you analyze your application's behavior.
 
 - Docker
->Docker is
+> Docker is OS-level virtualization software to run software in containers.
 
 - Amazon EKS
+> Amazon Elastic Kubernetes Service is a managed service that you can use to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes. Kubernetes is an open-source system for automating the deployment, scaling, and management of containe.
 
 - Amazon ECR
+> Amazon Elastic Container Registry is a managed container image registry service that is secure, scalable and reliable.
 
 - AWS Distro for OpenTelemetry
 
