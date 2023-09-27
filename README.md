@@ -24,11 +24,13 @@
 > AWS Distro for OpenTelemetry is a secure, production-ready, AWS-supported distribution of the OpenTelemetry project.
 
 - Trace Analytics
-> 
+> Trace Analytics is a plugin which you can use to analyze trace data from distributed application. The default installation of OpenSearch Dashboard for Amazon OpenSearch Service includes this plugin.
 
 - Data Prepper
+> Data Prepper is a open source utility service with ability to filter, enrich, transform, normalize and aggregate data to enable an end-to-end analysis life cycle from gathering raw logs to facilitating sophisticated and actionable interactive ad-hoc analyses on the data.
 
 - FluentBit
+> FluentBit is an open source processor and forwarder which collects, enriches and sends metrics and logs to various destinations.
 
 
 ![Slide1](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/2f342bd0-d437-46a3-b62a-e356e33d8542)
