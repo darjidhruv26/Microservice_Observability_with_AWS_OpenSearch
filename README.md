@@ -32,6 +32,8 @@
 - FluentBit
 > FluentBit is an open source processor and forwarder which collects, enriches and sends metrics and logs to various destinations.
 
+- What is Observability?
+Observability is the capability to continuously generate and discover actionable insights based on signals from the system under observation with the goal to influence the system.
 
 ![Slide1](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/2f342bd0-d437-46a3-b62a-e356e33d8542)
 
