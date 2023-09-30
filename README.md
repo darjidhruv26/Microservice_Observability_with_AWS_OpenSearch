@@ -50,24 +50,94 @@
 
 ![3](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/056dca2b-c703-43c6-bf15-b13b28a2522f)
 
+```bash
+GET _cat/indices?v 
+```
 ![4](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/c036582d-0354-46a0-9c52-ce416b07288a)
 
 ![5](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/6d2105d5-6743-461b-aed7-17c387251fce)
 
+```bash
+curl -sSL https://raw.githubusercontent.com/aws-samples/observability-with-amazon-opensearch/main/00-setup.sh | bash -s stable
+source ~/.bash_profile
+
+```
 ![6](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/e791ccdf-5d20-4b14-af4b-01f080ab3c48)
 
+```bash
+cd ~/environment/observability-with-amazon-opensearch/scripts/
+bash 01-build-push.sh
+
+```
+
+```bash
+...
+raw-pipeline #Line 25
+...
+ sink: #Line 31
+        - opensearch:
+            hosts: [ "https://__AOSDomainEndpoint__" ]
+            username: "__AOSDomainPassword__"
+            password: "__AOSDomainUserName__"
+            trace_analytics_raw: true
+...
+service-map-pipeline #Line 37
+...
+ sink: #Line 44
+        - opensearch:
+            hosts: [ "https://__AOSDomainEndpoint__" ]
+            username: "__AOSDomainPassword__"
+            password: "__AOSDomainUserName__"
+            trace_analytics_service_map: true
+...
+log-pipeline #Line 50
+...
+sink: #Line 62
+        - opensearch:
+            hosts: [ "https://__AOSDomainEndpoint__" ]
+            username: "__AOSDomainPassword__"
+            password: "__AOSDomainUserName__"
+            index: sample_app_logs
+
+```
+
+```bash
+cd ~/environment/observability-with-amazon-opensearch/scripts/
+bash 02-apply-k8s-manifests.sh
+```
+```bash
+watch -n 10 kubectl get pods --all-namespaces
+```
+```bash
+
+```
 ![7](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/c789c4fb-2919-4f9c-aa94-3a5037de3157)
+
+```bash
+kubectl get svc -nclient-service | awk '{print $4}' | tail -n1
+```
 
 ![8](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/a77a5528-7b2e-408c-9872-cd253346a933)
 
+```bash
+cd /environment/observability-with-amazon-opensearch/scripts/
+kubectl get svc -nclient-service | awk '{print $4}' | tail -n1
+```
+
 ![9](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/15b100c9-fd70-4e5b-99a5-e64f5898e9fe)
 
+```bash
+GET _cat/indices/sample_app_logs*?v
+```
 ![10](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/aebed0f0-022b-4918-b343-25b688da8192)
 
 ![11](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/7f06da9d-ac4a-4e16-bc84-8362d08cc3db)
 
 ![12](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/62081cfd-111c-4272-92c0-8c191c4e6ce4)
 
+```bash
+source = sample_app_logs
+```
 ![13](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/5bca0f53-fb4f-48e3-b3ef-50a444d86b3a)
 
 ![14](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/d03fc161-a09f-4f12-8040-0f7221a445ee)
@@ -88,6 +158,20 @@
 
 ![23](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/7d7c38f4-c439-491e-807e-3f679c86d432)
 
+```bash
+aws ecr get-login-password --region ${AWS_REGION} | docker login --username AWS --password-stdin ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com
+
+export repo_name=payment-service
+cd $HOME/environment/observability-with-amazon-opensearch/sample-apps/08-paymentService/
+docker build -t ${repo_name}:fixed .
+docker tag ${repo_name}:fixed ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${repo_name}:fixed
+docker push ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${repo_name}:fixed
+```
+
+```bash
+sed -i -e "s|amazonaws\.com\/payment\-service|amazonaws\.com\/payment\-service\:fixed|g" ${HOME}/environment/observability-with-amazon-opensearch/sample-apps/08-paymentService/kubernetes/01-deployment.yaml
+kubectl apply -f ${HOME}/environment/observability-with-amazon-opensearch/sample-apps/08-paymentService/kubernetes/
+```
 ![24](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/30c27422-6b05-4905-851e-e607ad24f131)
 
 ![25](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/3b89bd43-8771-44dd-aba5-115d11acaaf3)
@@ -99,6 +183,10 @@
 
 ![29](https://github.com/darjidhruv26/Microservice_Observability_with_AWS_OpenSearch/assets/90086813/2d294a1a-1ef3-43a4-b828-69ace65a1fc2)
 
+```bash
+cd ~/environment/observability-with-amazon-opensearch/scripts/
+bash 03-delete-ecr-repo.sh
+```
 # Resources
 - [OpenSerarch Docs](https://opensearch.org/docs/latest/)
 
